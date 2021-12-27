@@ -1,0 +1,16 @@
+.lb-container {
+  width: 30%;
+  height: 250px;
+  margin: 0px;
+  padding: 0px;
+  outline: black solid 1px;
+}
+
+.right-bottom-corner {
+  position: relative;
+  top: 45%;
+  right: 0px;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+}

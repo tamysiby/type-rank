@@ -1,0 +1,27 @@
+|_App
+    |__TypeBar
+    |__Leaderboard
+        |__TopFive
+        |__AllRanking
+
+backend:
+- finish update-rank get and see that u get the db logic
+- connect to front end sending back and forth
+- implement socket.io for realtime shiz
+
+- functions:
+    -[DONE] "see all ranking" and "go back" toggle logic 
+    -[DONE] user input logic
+    -[DONE] get location of user
+    -send location to back end and logic to add for leaderboard {POST doesn't work wtf'}
+- socket.io and mongoDB at leaderboard or its children 
+    - https://medium.com/swlh/build-your-own-realtime-database-with-socket-io-and-mongodb-1c561c2bb87
+- use useEffect in leaderboard to track any changes from DB and mount it on the leaderboard
+
+- css
+	- https://www.w3schools.com/css/css_positioning.asp
+	- https://saweria.co/
+
+since fetch location is in Location, that means I'd have to get location there or add another fetch location in the backend
+
+BUILD BEFORE DEPLOYING
