@@ -13,7 +13,8 @@ function TypeBar({location}) {
   const name = {title: `${location}`}
 
   async function postLocation(e){
-    e.preventDefault()
+    //e.preventDefault() //prevent page from refreshing.
+
     //checks if user submits other than 'anjay'
     if(text.current.value.toLowerCase() !== "anjay"){
       alert("only 'anjay' bruh.")

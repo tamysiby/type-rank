@@ -8,11 +8,9 @@ function Leaderboard() {
     const [locationData, setLocationData] = useState([])
     
     useEffect(()=>{
-        fetch('/all-leaderboard').then(
+        fetch('/all-provinces').then(
             res => {
-                if(res.ok){
-                    return res.json()
-                }
+                if(res.ok){ return res.json() }
             }
         ).then(jsonResponse => setLocationData(jsonResponse))
         //).then(jsonResponse => console.log(jsonResponse))

@@ -38,12 +38,16 @@ mongoose.connect(DB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
 app.use(cors())
 // app.use(bodyParser.json())
 
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+})
+
 //[+] Sending data to react on start (IF REALLY NEEDED, SO MANY PPL, CHANGE TO CURSOR)
 //const all = await Provinsi.find();
-app.get('/', (req, res) => {
+app.get('/all-provinces', (req, res) => {
     //res.send('Hello World!')
     Provinsi.find()
-        .then(provinces => res.json(provinces))
+        .then(provinces => res.send(provinces))
         .catch(err => res.status(400).json('Error: ' + err))
 })
 
