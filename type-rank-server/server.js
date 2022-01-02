@@ -17,7 +17,7 @@ app.use(function(req, res, next) {
     next();
   });
 
-const PORT = 5000
+const PORT = process.env.port || 5000
 const DB_PASS = 'vDB8cIHxcqi79ReN'
 const DB_URI = `mongodb+srv://tamy:${DB_PASS}@cluster0.z95m2.mongodb.net/type-rank?retryWrites=true&w=majority`
 
