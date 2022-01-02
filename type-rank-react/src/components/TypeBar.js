@@ -24,7 +24,7 @@ function TypeBar({location}) {
 
     
     try {
-      await axios.post("http://localhost:5000/post-location", 
+      await axios.post("/post-location", 
       {loc: location})
       .then(res => {
         console.log(res);

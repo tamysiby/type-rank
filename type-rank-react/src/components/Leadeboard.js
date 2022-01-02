@@ -4,7 +4,6 @@ import TopFive from './TopFive';
 import './Leaderboard.css';
 
 function Leaderboard() {
-    const [isAROpen, setIsAROpen] = useState(false)
     const [locationData, setLocationData] = useState([])
     
     useEffect(()=>{
@@ -16,22 +15,12 @@ function Leaderboard() {
         //).then(jsonResponse => console.log(jsonResponse))
     },[])
 
-    if(isAROpen){
-        return (
-            <div className="lb-container">
-                <AllRanking data={locationData}/>
-                <p onClick={() => setIsAROpen(!isAROpen)} className="right-bottom-corner">back</p>
-            </div>
-          );
-    } else {
-        return (
-            <div className="lb-container">
-                <TopFive data={locationData}/>
-                <p onClick={() => setIsAROpen(!isAROpen)} className="right-bottom-corner">see full ranking...</p>
-            </div>
-          );
-    }
-  
+ 
+    return (
+        //<div className="lb-container">
+            <AllRanking data={locationData}/>
+        //</div>
+    )
 }
 
 export default Leaderboard;
