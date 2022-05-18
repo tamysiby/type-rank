@@ -1,7 +1,7 @@
 # type-rank
 Type "anjay" for 1 point to your province:)
 
-<code>cd type-rank-react</code>, <code>npm start</code> to start react
+<code>cd type-rank-react</code>, <code>npm start</code> to start react<br>
 <code>cd type-rank-server</code>, <code>node server</code> to start server
 
 resources:
