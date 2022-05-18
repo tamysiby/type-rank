@@ -1,8 +1,8 @@
 # type-rank
 Type "anjay" for 1 point to your province:)
 
-npm start to start react
-cd type-rank-server, node server to start server
+<code>cd type-rank-react</code>, <code>npm start</code> to start react
+<code>cd type-rank-server</code>, <code>node server</code> to start server
 
 resources:
 * Socket.io MongoDB for real-time leaderboard: https://medium.com/swlh/build-your-own-realtime-database-with-socket-io-and-mongodb-1c561c2bb87
